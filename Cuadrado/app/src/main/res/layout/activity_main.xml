@@ -11,7 +11,7 @@
         android:id="@+id/cuadrado"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@color/RosaPuton"
+        android:background="@color/black"
         android:layout_centerInParent="true"/>
 
     <Button
