@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/cuadrado"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/RosaPuton"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/botArriba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arriba"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/cuadrado"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/botAbajo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abajo"
+        android:layout_marginTop="90dp"
+        android:layout_below="@id/cuadrado"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/botTamano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cambiar tamaño"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/botAbajo"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/botColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cambiar color"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/botTamano"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/botDerecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Derecha"
+        android:layout_marginTop="60dp"
+        android:layout_toEndOf="@id/botArriba"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/cuadrado"
+        />
+
+    <Button
+        android:id="@+id/botIzquierda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Izquierda"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="10dp"
+        android:layout_toStartOf="@id/botArriba"
+        android:layout_below="@id/cuadrado" />
+
+</RelativeLayout>
