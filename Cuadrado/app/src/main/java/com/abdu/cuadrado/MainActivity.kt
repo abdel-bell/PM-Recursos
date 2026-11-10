@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
                 actualizarVista(cuadradoVista,cuadrado)
             }
             botColor.setOnClickListener {
-                cuadrado.cambiarColor()
+                cuadrado.color = ContextCompat.getColor(this, R.color.RosaPuton)
                 actualizarVista(cuadradoVista,cuadrado)
             }
         }

@@ -1,6 +1,7 @@
 package model
 
 import android.graphics.Color
+import androidx.core.content.ContextCompat
 import com.abdu.cuadrado.R
 import java.util.random.RandomGenerator
 import kotlin.random.Random
@@ -42,10 +43,9 @@ class Cuadrado(var color: Int, var ancho: Int, var alto: Int) {
         alto = nuevoAlto
     }
 
-    fun cambiarColor(){
-
-        val nuevoColor = R.color.white
-        color = nuevoColor
-    }
+//    fun cambiarColor(){
+//
+//
+//    }
 
 }
