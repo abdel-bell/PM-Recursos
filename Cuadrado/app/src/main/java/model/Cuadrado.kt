@@ -43,9 +43,5 @@ class Cuadrado(var color: Int, var ancho: Int, var alto: Int) {
         alto = nuevoAlto
     }
 
-//    fun cambiarColor(){
-//
-//
-//    }
 
 }

@@ -1,5 +1,6 @@
 package com.abdu.cuadrado
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -9,6 +10,8 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import model.Cuadrado
+import java.util.random.RandomGenerator
+import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -61,7 +64,8 @@ class MainActivity : AppCompatActivity() {
                 actualizarVista(cuadradoVista,cuadrado)
             }
             botColor.setOnClickListener {
-                cuadrado.color = ContextCompat.getColor(this, R.color.RosaPuton)
+                //cuadrado.color = ContextCompat.getColor(this, R.color.RosaPuton)
+                cuadrado.color = generarColorAleatorio()
                 actualizarVista(cuadradoVista,cuadrado)
             }
         }
@@ -76,5 +80,15 @@ class MainActivity : AppCompatActivity() {
         cuadradoVista.setBackgroundColor(cuadrado.color)
         //se ejecutan los cambios
         cuadradoVista.requestLayout()
+    }
+    fun generarColorAleatorio(): Int{
+        //Generar numeros aleatorios
+        val random = Random.Default
+        //asignamos valores comprendidos entre 0-255
+        val rojo = random.nextInt(256)
+        val verde = random.nextInt(256)
+        val azul = random.nextInt(256)
+
+        return  Color.rgb(rojo, verde, azul)
     }
 }
